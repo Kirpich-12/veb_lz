@@ -1,182 +1,92 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #ffffff;
-    color: #111;
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  header {
-    padding: 20px 0;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+.steps {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    height: 40px;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 60px 0;
-  }
-  
-  .hero-content {
-    max-width: 50%;
-  }
-  
-  .hero-content h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .hero-content p {
-    margin-bottom: 20px;
-  }
-  
-  .cta-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-  }
-  
-  .hero-image img {
-    width: 400px;
-    border-radius: 10px;
-  }
-  
-  .states ul {
-    display: flex;
+    align-items: center; /* выравнивание по вертикали */
     justify-content: center;
-    gap: 10px;
-    list-style: none;
-    margin: 40px 0;
-  }
-  
-  .mission {
+    gap: 20px;
+    font-family: sans-serif;
+    color: #6c7a89;
     text-align: center;
-    padding: 60px 20px;
-    background-color: #f9f9f9;
   }
   
-  .mission-cards {
+  .step {
     display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
   }
   
-  .card {
-    width: 30%;
+  .circle {
+    background-color: #004f4f;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .line {
+    width: 60px;
+    height: 2px;
+    background-color: #e0e0e0;
+    align-self: center;
+  }
+  .media-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
     padding: 20px;
     background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 6px;
   }
   
-  .success {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .success .images img {
-    width: 300px;
-    margin: 10px;
-    border-radius: 8px;
-  }
-  
-  .logos ul {
+  .media-logos {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 40px 0;
-  }
-  
-  .visual, .audience, .press, .map {
-    padding: 60px 20px;
-  }
-  
-  .audience-columns {
-    display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 5%;
+    font-family: sans-serif;
+    background-color: white;
     flex-wrap: wrap;
   }
   
-  .audience-columns div {
+  .media-item {
     flex: 1;
-    min-width: 200px;
-  }
-  
-  .press ul {
-    list-style: none;
-  }
-  
-  .press li {
-    margin-bottom: 10px;
-  }
-  
-  .footer {
-    background-color: #111;
-    color: white;
-    padding: 40px 20px;
-  }
-  
-  .footer-columns {
+    max-width: 160px;
     display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    position: relative;
   }
   
-  .footer-columns h4 {
-    margin-bottom: 10px;
+  .media-item::before {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 1px;
+    background-color: #d3d3d3;
+    margin-bottom: 12px;
   }
   
-  .footer-columns ul {
-    list-style: none;
+  .media-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
   
-  .footer-columns a {
-    color: #ccc;
-    text-decoration: none;
+  .media-content img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
   }
   
-  .footer-columns a:hover {
-    text-decoration: underline;
+  .media-content span {
+    color: #6c7a89;
+    font-size: 14px;
+    line-height: 1.2;
   }
   
-  .copyright {
-    text-align: center;
-    font-size: 0.9em;
-    color: #888;
-  }
