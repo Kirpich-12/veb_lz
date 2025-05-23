@@ -89,4 +89,95 @@
     font-size: 14px;
     line-height: 1.2;
   }
-  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.ted-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.ted-top-bar {
+    height: 2px;
+    background-color: #e0e0e0; /* Светло-серый цвет полоски */
+    border-bottom: 1px solid #ccc; /* Граница снизу */
+}
+
+.ted-block {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: -1px; /* Убираем зазор между полоской и блоком */
+}
+
+.ted-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ted-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.ted-talks {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-right: auto;
+}
+
+.ted-date {
+    font-size: 14px;
+    color: #666;
+}
+
+.ted-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a6f6d;
+    margin: 0;
+} 
+.get-in-touch {
+  background-color: #1a6f6d; /* Темно-зеленый цвет кнопки */
+  color: #fff; /* Белый цвет текста */
+  border: none;
+  border-radius: 25px; /* Закругленные углы */
+  padding: 10px 20px; /* Внутренние отступы */
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Плавный переход при наведении */
+}
+
+.get-in-touch:hover {
+  background-color: #155a58; /* Чуть темнее при наведении */
+}
+.work {
+  background-color: #001F1F; /* Темный фон, как на изображении */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.striped-container {
+  width: 100px; /* Ширина полосок */
+  height: 100%; /* Высота на всю страницу */
+  background: repeating-linear-gradient(
+      90deg,
+      #000 0,
+      #000 50%,
+      #fff 50%,
+      #fff 100%
+  );
+}
