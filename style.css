@@ -62,11 +62,13 @@ p {
   background-color: transparent;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
-  border-radius: 999px; /* полностью скруглённая */
+  border-radius: 999px;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
   margin-top:29px;
+  position: relative;
+  left:32px
 }
 
 .beard-bb:hover {
@@ -82,12 +84,14 @@ p {
 }
 .trust_f {
   display: flex;
+  position: relative;
 }
 .box {
   color: #FFFFFF;
   font-size: 15px;
   margin:19px 57px;
   position: relative;
+  bottom: 15px;
   padding-top: 16px;
 }
 
@@ -108,121 +112,164 @@ p {
     justify-content: center;
     gap: 20px;
     font-family: sans-serif;
-    color: #6c7a89;
+    color: #003331;
     text-align: center;
-  }
-  
-  .step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 120px;
-  }
-  
-  .circle {
-    background-color: #004f4f;
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: bold;
-    margin-bottom: 10px;
-  }
-  
-  .line {
-    width: 60px;
-    height: 2px;
-    background-color: #e0e0e0;
-    align-self: center;
-  }
-
-  .crime-text {
-    font-family: "Libre Baskerville", sans-serif;
-    font-size: px;
-    width:714px;
-    align-items: center;
     
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .media-logos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px;
-    background-color: white;
-  }
   
-  .media-logos {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 30px 5%;
-    font-family: sans-serif;
-    background-color: white;
-    flex-wrap: wrap;
-  }
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  position: relative;
+  top:10px;
+}
+
+.circle {
+  background-color: #004f4f;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: bold;
+  margin-bottom: 10px;
+}
+
+.line {
+  width: 135px;
+  height: 2px;
+  background-color: #e0e0e0;
+  align-self: center;
+  position: relative;
+  bottom: 15px;
+}
+.crime-text h2{
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 30px;
+  font-weight: 90;
+  width:680px;
+  text-align: center;
+  color:#003331
   
-  .media-item {
-    flex: 1;
-    max-width: 160px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    position: relative;
-  }
+}
+.human{
+  display: flex;
+}
+.human-right {
+  display: flex;
+}
+.h_i_1 img{
+  width: 235px   ;
+  height:266px ;
+  margin-right: 8px;
+}
+.h_i_2 img{
+  width: 317px;
+  height: 262px;
+}
+.human-left h4 {
+  color:#003331;
+  font-family: "Public Sans", sans-serif;
+  font-size: 22px;
+  width:418 ;
   
-  .media-item::before {
-    content: "";
-    display: block;
-    width: 60%;
-    height: 1px;
-    background-color: #d3d3d3;
-    margin-bottom: 12px;
-  }
-  
-  .media-content {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  
-  .media-content img {
-    width: 16px;
-    height: 16px;
-    object-fit: contain;
-  }
-  
-  .media-content span {
-    color: #6c7a89;
-    font-size: 14px;
-    line-height: 1.2;
-  }
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
+}
+.human-left p{
+  color:#355362;
+  width:449px ;
+}
+.human-button {
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #00413E;
+  border: 1px solid #00413E;
+  border-radius: 999px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top:29px;
+  font-family: "Public Sans", sans-serif;
+  font-size: 13px;
+
+}
+.human-button:hover {
+  background-color: #e3e3e3;
+}
+
+
+
+
+
+
+
+
+
+
+
+.media-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  background-color: white;
+}
+
+.media-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 5%;
+  font-family: sans-serif;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.media-item {
+  flex: 1;
+  max-width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  position: relative;
+}
+
+.media-item::before {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 1px;
+  background-color: #d3d3d3;
+  margin-bottom: 12px;
+}
+
+.media-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.media-content img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.media-content span {
+  color: #6c7a89;
+  font-size: 14px;
+  line-height: 1.2;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
 }
 
 .ted-container {
