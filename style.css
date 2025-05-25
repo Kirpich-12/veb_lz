@@ -1,3 +1,107 @@
+
+
+
+
+p {
+    font-family: "Public Sans", sans-serif;
+    font-size: 15px;
+
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+.brd {
+  background-image: url(assets/beard\ 2.jpg);
+  background-repeat: no-repeat;    /* не повторять */
+  background-size:cover;          /* растянуть */
+  background-position: center;
+  height: 500px;
+}
+.header-img{
+  margin: 13px auto 0px 60px;
+
+}
+.header-right {
+  display: flex;
+}
+.header-button {
+  margin: 17px 30px;
+}
+.header-button a {
+  text-decoration: none;  
+  color: #FFFFFF;
+}
+.imgage {
+  max-width: 1280px;
+}
+.beard h1 {
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 38px;
+}
+.beard{
+  display: flex;
+  flex-direction: column;
+}
+.chit {
+  width:535px;
+  height:54px;
+  margin-left:32px;
+  margin-bottom:19px ;
+  color:#FFFFFF;
+}
+.beard-text{
+  width:542px;
+  height:56px;
+  margin-left:32px;
+  margin-top:37px;
+  color:#FFFFFF ;
+}
+.beard-bb {
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 999px; /* полностью скруглённая */
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top:29px;
+}
+
+.beard-bb:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.Trusted {
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  margin-left:32px ;
+  margin-top: 120px;
+
+}
+.trust_f {
+  display: flex;
+}
+.box {
+  color: #FFFFFF;
+  font-size: 15px;
+  margin:19px 57px;
+  position: relative;
+  padding-top: 16px;
+}
+
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px; /* длина линии */
+  height: 0.5px;
+  background-color:#FFFFFF ;
+}
+
 .steps {
     display: flex;
     align-items: center; /* выравнивание по вертикали */
@@ -24,7 +128,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
+    font-size: bold;
     margin-bottom: 10px;
   }
   
@@ -34,6 +138,31 @@
     background-color: #e0e0e0;
     align-self: center;
   }
+
+  .crime-text {
+    font-family: "Libre Baskerville", sans-serif;
+    font-size: px;
+    width:714px;
+    align-items: center;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .media-logos {
     display: flex;
     align-items: center;
@@ -129,7 +258,7 @@
 
 .ted-talks {
     font-size: 14px;
-    font-weight: bold;
+    font-size: bold;
     color: #333;
     margin-right: auto;
 }
@@ -141,7 +270,7 @@
 
 .ted-title {
     font-size: 24px;
-    font-weight: bold;
+    font-size: bold;
     color: #1a6f6d;
     margin: 0;
 } 
@@ -152,7 +281,7 @@
   border-radius: 25px; /* Закругленные углы */
   padding: 10px 20px; /* Внутренние отступы */
   font-size: 16px;
-  font-weight: bold;
+  font-size: bold;
   font-family: Arial, sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease; /* Плавный переход при наведении */
